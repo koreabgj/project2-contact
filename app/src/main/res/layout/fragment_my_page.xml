@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyPageFragment">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/img_my_page"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="start"
+                android:text="@string/my_page_name_tag"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/civ_profile" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_radius_bg"
+                android:inputType="text"
+                android:padding="5dp"
+                android:text="@string/my_page_name"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@id/tv_name_tag"
+                app:layout_constraintStart_toStartOf="@id/tv_name_tag"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_tag" />
+
+            <TextView
+                android:id="@+id/tv_introduction_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/my_page_introduction_tag"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@id/et_name"
+                app:layout_constraintStart_toStartOf="@id/et_name"
+                app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/clr_D9D9D9"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="@id/tv_introduction_tag"
+                app:layout_constraintStart_toStartOf="@id/tv_introduction_tag"
+                app:layout_constraintTop_toBottomOf="@id/tv_introduction_tag">
+
+                <TextView
+                    android:id="@+id/tv_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/my_page_introduction"
+                    android:textSize="20dp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tv_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/my_page_img_tag"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@id/cv"
+                app:layout_constraintStart_toStartOf="@id/cv"
+                app:layout_constraintTop_toBottomOf="@id/cv" />
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img_my_page2"
+                app:layout_constraintEnd_toEndOf="@id/tv_image"
+                app:layout_constraintStart_toStartOf="@id/tv_image"
+                app:layout_constraintTop_toBottomOf="@id/tv_image" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

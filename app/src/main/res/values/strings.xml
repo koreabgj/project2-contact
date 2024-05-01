@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">nbc_SunnyUs</string>
+    <string name="my_page_name_tag">이름</string>
+    <string name="my_page_name">홍길동</string>
+    <string name="my_page_introduction_tag">소개</string>
+    <string name="my_page_introduction">안녕하세요.^^\n저는 개발자 홍길동 입니다.\n만나서 반갑습니다.\n앞으로도 잘 부탁 드립니다.</string>
+    <string name="my_page_img_tag">이미지</string>
+    <string name="dialog_add_name_tag">이름</string>
+    <string name="dialog_add_phoneNumber_tag">전화번호</string>
+    <string name="dialog_add_email_tag">이메일</string>
+    <string name="dialog_add_team_tag">소속</string>
+    <string name="dialog_add_save_button">저장</string>
+    <string name="dialog_add_cancel_button">취소</string>
+    <string name="item_even">연락처1</string>
+    <string name="item_odd">연락처1</string>
+    <string name="main_fab">연락처 추가 버튼</string>
+
+    <string name="contact_person_name">홍길동</string>
+    <string name="contact_phone_number_name">전화번호</string>
+    <string name="contact_phone_number_data_name">010-1234-5678</string>
+    <string name="contact_email_name">이메일</string>
+    <string name="contact_email_data_name">hgd@naver.com</string>
+    <string name="contact_team_name">소속팀</string>
+    <string name="contact_team_data_name">내배캠 안드로이드 3기</string>
+    <string name="contact_memo_name">메모</string>
+    <string name="contact_hint_memo">여기에 메모하실 내용을 입력해 주세요</string>
+</resources>
